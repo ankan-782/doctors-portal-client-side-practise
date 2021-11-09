@@ -47,7 +47,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             date: date.toLocaleDateString()
         }
         //send to the database by server
-        fetch('http://localhost:5000/appointments', {
+        fetch('https://dry-lowlands-49918.herokuapp.com/appointments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
